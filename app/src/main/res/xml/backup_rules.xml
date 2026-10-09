@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Primary SQLite/Room database files (exact clean relative paths, NO wildcards) -->
+    <include domain="database" path="spendwise.db" />
+    <include domain="database" path="expenso.db" />
+
+    <!-- App preferences holding user salary, wallet credit, and timestamps -->
+    <include domain="sharedpref" path="." />
+    <!-- Preferences DataStore directory -->
+    <include domain="file" path="datastore" />
+
+    <!-- Exclude hardware-bound keystore that cannot be decrypted on other devices -->
+    <exclude domain="file" path="datastore/secure_key_store.preferences_pb" />
+
+    <!-- Strictly exclude temporary SQLite journal files (exact file names, NO wildcards) -->
+    <exclude domain="database" path="spendwise.db-wal" />
+    <exclude domain="database" path="spendwise.db-shm" />
+    <exclude domain="database" path="spendwise.db-journal" />
+    <exclude domain="database" path="expenso.db-wal" />
+    <exclude domain="database" path="expenso.db-shm" />
+    <exclude domain="database" path="expenso.db-journal" />
+
+    <!-- Exclude temporary receipt images, coil caches, and UI artifacts to stay under 25 MB -->
+    <exclude domain="root" path="cache" />
+    <exclude domain="file" path="receipts" />
+    <exclude domain="file" path="temp_receipts" />
+    <exclude domain="file" path="image_cache" />
+    <exclude domain="external" path="." />
+</full-backup-content>

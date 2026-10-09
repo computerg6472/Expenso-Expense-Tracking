@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Expenso</string>
+    <string name="notification_channel_upi">UPI Payment Reminder</string>
+    <string name="notification_channel_upi_desc">Notifies you to log expense after UPI payment</string>
+    <string name="notification_channel_service">Background Monitor</string>
+    <string name="notification_channel_service_desc">UPI monitor service notification</string>
+    <string name="notification_upi_title">Payment done? Log your expense</string>
+    <string name="notification_upi_body">Tap to add expense in Expenso</string>
+    <string name="service_running">Expenso UPI Monitor running</string>
+    <string name="service_desc">Watching for UPI app activity</string>
+    <string name="biometric_prompt_title">Unlock Expenso</string>
+    <string name="biometric_prompt_subtitle">Use biometric or device credentials to unlock</string>
+    <string name="biometric_prompt_cancel">Cancel</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="reports">Reports</string>
+    <string name="settings">Settings</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="salary">Monthly Salary</string>
+    <string name="spent_income">Spent (Income)</string>
+    <string name="credit_card_spend">Credit Card Spend</string>
+    <string name="credit_card_due">Credit Card Due</string>
+    <string name="currency_symbol">₹</string>
+    <string name="shortcut_add_expense_short">Add Expense</string>
+    <string name="shortcut_add_expense_long">Quickly record a new expense</string>
+    <string name="shortcut_history_short">History</string>
+    <string name="shortcut_history_long">View transaction history</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Primary SQLite/Room database files (clean relative paths, NO wildcards) -->
+        <include domain="database" path="spendwise.db" />
+        <include domain="database" path="expenso.db" />
+
+        <!-- App preferences & DataStore holding ledger state and backup vault key -->
+        <include domain="sharedpref" path="." />
+        <include domain="file" path="datastore" />
+
+        <!-- Exclude hardware-bound keystore that cannot be decrypted on other devices -->
+        <exclude domain="file" path="datastore/secure_key_store.preferences_pb" />
+
+        <!-- Strictly exclude volatile SQLite journal and index cache files (NO wildcards) -->
+        <exclude domain="database" path="spendwise.db-wal" />
+        <exclude domain="database" path="spendwise.db-shm" />
+        <exclude domain="database" path="spendwise.db-journal" />
+        <exclude domain="database" path="expenso.db-wal" />
+        <exclude domain="database" path="expenso.db-shm" />
+        <exclude domain="database" path="expenso.db-journal" />
+
+        <!-- Exclude temporary receipt images, coil caches, and UI artifacts to stay under 25 MB -->
+        <exclude domain="root" path="cache" />
+        <exclude domain="file" path="receipts" />
+        <exclude domain="file" path="temp_receipts" />
+        <exclude domain="file" path="image_cache" />
+        <exclude domain="external" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="spendwise.db" />
+        <include domain="database" path="expenso.db" />
+        <include domain="sharedpref" path="." />
+        <include domain="file" path="datastore" />
+
+        <!-- Exclude hardware-bound keystore that cannot be decrypted on other devices -->
+        <exclude domain="file" path="datastore/secure_key_store.preferences_pb" />
+
+        <exclude domain="database" path="spendwise.db-wal" />
+        <exclude domain="database" path="spendwise.db-shm" />
+        <exclude domain="database" path="spendwise.db-journal" />
+        <exclude domain="database" path="expenso.db-wal" />
+        <exclude domain="database" path="expenso.db-shm" />
+        <exclude domain="database" path="expenso.db-journal" />
+        <exclude domain="root" path="cache" />
+        <exclude domain="file" path="receipts" />
+        <exclude domain="file" path="temp_receipts" />
+        <exclude domain="file" path="image_cache" />
+        <exclude domain="external" path="." />
+    </device-transfer>
+</data-extraction-rules>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "46820145429",
+    "project_id": "expenso-f30c5",
+    "storage_bucket": "expenso-f30c5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46820145429:android:e41a7128a05a2e2945911c",
+        "android_client_info": {
+          "package_name": "com.spendwise.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46820145429-1bbchh3jah8srfd7pr9ncvovbir4b4ie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spendwise.app",
+            "certificate_hash": "6a33d3e96059e209a61ddb93d4d9ae05626a0720"
+          }
+        },
+        {
+          "client_id": "46820145429-9sbn6q4jqahvoqertcitgnjeolqqurnb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spendwise.app",
+            "certificate_hash": "48116a7c819de5ec3adb79465f693c833ba93164"
+          }
+        },
+        {
+          "client_id": "46820145429-m2a8kbf0jajpc4309h4gaiubehhh3qtn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa91Cx8BBqVB4wLbRqKSBkEGRBPxVMPPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46820145429-m2a8kbf0jajpc4309h4gaiubehhh3qtn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
