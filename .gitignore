@@ -1,8 +1,14 @@
 # Built application files
 *.apk
+!/Expenso.apk
+!/app/release/Expenso.apk
+!/app/Expenso.apk
+!/apk/Expenso.apk
 *.aar
 *.ap_
 *.aab
+
+
 
 # Files for the ART/DALVIK VM
 *.dex
